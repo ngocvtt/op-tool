@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
+options: "d587bc40a4a75e5d4ae77b2063253da7ef624d0b6946f6e8c2da19257daccb25"
+build_start_time: [1682065898, 345756053]
+build_end_time: [1682065898, 944819927]
+inputs:
+  "/Users/Projects/WTM/QR-gen/qr_generator/macos/Flutter/GeneratedPluginRegistrant.swift": [1682065872, 177934169]
+  "/Users/Projects/WTM/QR-gen/qr_generator/macos/Runner/AppDelegate.swift": [1650259330, 0]
+  "/Users/Projects/WTM/QR-gen/qr_generator/macos/Runner/MainFlutterWindow.swift": [1650259330, 0]
