@@ -8,9 +8,12 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:qr_generator/pages/img/image_converter_page.dart';
 import 'package:qr_generator/pages/qr/gradient-tab.dart';
 import 'package:qr_generator/pages/qr/linear-tab.dart';
 import 'package:qr_generator/pages/qr/mode.dart';
+import 'package:qr_generator/pages/qr/qr_main_page.dart';
+import 'package:qr_generator/pages/shorten_url/shorten_url_page.dart';
 import 'package:qr_generator/qr_flutter.dart';
 import 'package:qr_generator/src/pretty_qr.dart';
 
@@ -24,11 +27,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'QR Generator Tool @ WTM HCMC',
+      title: 'Internal Tool @ WTM HCMC',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'QR Generator Tool @ WTM HCMC'),
+      home: const MyHomePage(title: 'Internal Tool @ WTM HCMC'),
+
     );
   }
 }
@@ -59,117 +63,75 @@ class _MyHomePageState extends State<MyHomePage> {
 
   double _currentPixelRate = 1;
 
+  int _selectedIndex = 0;
+
+  final List<Widget> _widgetOptions = <Widget>[
+    // const Text(
+    //   'Index 0: Home',
+    //   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+    // ),
+   const QrMainPage(),
+   const ShortenUrlPage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Container(
-        padding: EdgeInsets.all(20),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+      drawer: Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
           children: [
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  TextField(
-                    controller: _nameController,
-                    decoration: InputDecoration(
-                        isDense: true,
-                        // and add this line
-                        contentPadding: EdgeInsets.all(15),
-                        labelText: 'Name',
-                        // Set border for enabled state (default)
-                        enabledBorder: OutlineInputBorder(
-                          borderSide:
-                              const BorderSide(width: 1, color: Colors.black),
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        // Set border for focused state
-                        focusedBorder: OutlineInputBorder(
-                          borderSide:
-                              const BorderSide(width: 1, color: Colors.blue),
-                          borderRadius: BorderRadius.circular(5),
-                        )),
-                    style: TextStyle(fontSize: 12),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  TextField(
-                    controller: _urlController,
-                    decoration: InputDecoration(
-                        isDense: true,
-                        // and add this line
-                        contentPadding: EdgeInsets.all(15),
-                        labelText: 'URL',
-                        // Set border for enabled state (default)
-                        enabledBorder: OutlineInputBorder(
-                          borderSide:
-                              const BorderSide(width: 1, color: Colors.black),
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        // Set border for focused state
-                        focusedBorder: OutlineInputBorder(
-                          borderSide:
-                              const BorderSide(width: 1, color: Colors.blue),
-                          borderRadius: BorderRadius.circular(5),
-                        )),
-                    style: TextStyle(fontSize: 12),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text("QR Code Result ${mode?.name?? ""}", style: TextStyle(fontWeight: FontWeight.bold),),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  _buildQrResult(),
-                  SizedBox(height: 10,),
-                  Slider(
-                    value: _currentPixelRate,
-                    max: 20,
-                    divisions: 20,
-                    label: '${_currentPixelRate.round() * 200} x ${_currentPixelRate.round() * 200} px',
-                    onChanged: (double value) {
-                      setState(() {
-                        _currentPixelRate = value;
-                      });
-                    },
-                  ),
-                  SizedBox(height: 10,),
-                  Text("Image Dimensions: ${_currentPixelRate.round() * 200} x ${_currentPixelRate.round() * 200} px"),
-                  ..._buildExport(),
-                ],
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.black,
               ),
+              child: Center(child: Text('Happy doing deadlines!\nHope this tool help!', style: TextStyle(color: Colors.white),)),
             ),
-            SizedBox(
-              width: 20,
+            // ListTile(
+            //   title: const Text('Home'),
+            //   selected: _selectedIndex == 0,
+            //   onTap: () {
+            //     // Update the state of the app
+            //     _onItemTapped(0);
+            //     // Then close the drawer
+            //     Navigator.pop(context);
+            //   },
+            // ),
+            ListTile(
+              title: const Text('QR Generator'),
+              selected: _selectedIndex == 0,
+              onTap: () {
+                // Update the state of the app
+                _onItemTapped(0);
+                // Then close the drawer
+                Navigator.pop(context);
+              },
             ),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  QRLinearTab(onGenerate: (color) {
-                    //Generate with mode Linear
-                    linearColor = color;
-                    _handleGenerate(ColorMode.linear);
-                  }),
-
-                  QRGradientTab(onGenerate: (color) {
-                    //Generate with mode Linear
-                    gradient = color;
-                    _handleGenerate(ColorMode.gradient);
-                  })
-                ],
-              ),
-            )
+            ListTile(
+              title: const Text('Shorten Url (via tinyUrl)'),
+              selected: _selectedIndex == 1,
+              onTap: () {
+                // Update the state of the app
+                _onItemTapped(1);
+                // Then close the drawer
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
+      body: _widgetOptions[_selectedIndex],
     );
+  }
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   Widget _buildQrResult() {

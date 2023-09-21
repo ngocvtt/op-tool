@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:qr/qr.dart';
+import 'package:qr_generator/enum/qr_type.dart';
 
 import 'pretty_qr_painter.dart';
 
@@ -32,6 +33,9 @@ class PrettyQr extends StatelessWidget {
 
   final ImageProvider? image;
 
+  //Qr Type for square or circle dot
+  final QrType type;
+
   PrettyQr(
       {Key? key,
       this.size = 100,
@@ -41,6 +45,7 @@ class PrettyQr extends StatelessWidget {
       this.roundEdges = false,
       this.typeNumber,
         this.gradient,
+        this.type = QrType.square,
       this.image})
       : super(key: key);
 
@@ -86,7 +91,9 @@ class PrettyQr extends StatelessWidget {
                   errorCorrectLevel: errorCorrectLevel,
                   elementColor: elementColor,
                   roundEdges: roundEdges,
-                  typeNumber: typeNumber),
+                  typeNumber: typeNumber,
+                  qrType: type
+              ),
             ),
           );
         } else {

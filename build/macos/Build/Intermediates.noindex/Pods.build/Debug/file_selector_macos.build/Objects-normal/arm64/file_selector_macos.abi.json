@@ -1,0 +1,3058 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Cocoa",
+      "printedName": "Cocoa",
+      "declKind": "Import",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "file_selector_macos"
+    },
+    {
+      "kind": "Import",
+      "name": "UniformTypeIdentifiers",
+      "printedName": "UniformTypeIdentifiers",
+      "declKind": "Import",
+      "moduleName": "file_selector_macos"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "PanelController",
+      "printedName": "PanelController",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "display",
+          "printedName": "display(_:for:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSSavePanel",
+              "printedName": "AppKit.NSSavePanel",
+              "usr": "c:objc(cs)NSSavePanel"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "AppKit.NSWindow?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSWindow",
+                  "printedName": "AppKit.NSWindow",
+                  "usr": "c:objc(cs)NSWindow"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Foundation.URL?) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Foundation.URL?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "URL",
+                      "printedName": "Foundation.URL",
+                      "usr": "s:10Foundation3URLV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos15PanelControllerP7display_3for17completionHandlerySo06NSSaveD0C_So8NSWindowCSgy10Foundation3URLVSgctF",
+          "mangledName": "$s19file_selector_macos15PanelControllerP7display_3for17completionHandlerySo06NSSaveD0C_So8NSWindowCSgy10Foundation3URLVSgctF",
+          "moduleName": "file_selector_macos",
+          "genericSig": "<τ_0_0 where τ_0_0 : file_selector_macos.PanelController>",
+          "sugared_genericSig": "<Self where Self : file_selector_macos.PanelController>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "display",
+          "printedName": "display(_:for:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "NSOpenPanel",
+              "printedName": "AppKit.NSOpenPanel",
+              "usr": "c:objc(cs)NSOpenPanel"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "AppKit.NSWindow?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSWindow",
+                  "printedName": "AppKit.NSWindow",
+                  "usr": "c:objc(cs)NSWindow"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "([Foundation.URL]?) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "[Foundation.URL]?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[Foundation.URL]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "URL",
+                          "printedName": "Foundation.URL",
+                          "usr": "s:10Foundation3URLV"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos15PanelControllerP7display_3for17completionHandlerySo06NSOpenD0C_So8NSWindowCSgySay10Foundation3URLVGSgctF",
+          "mangledName": "$s19file_selector_macos15PanelControllerP7display_3for17completionHandlerySo06NSOpenD0C_So8NSWindowCSgySay10Foundation3URLVGSgctF",
+          "moduleName": "file_selector_macos",
+          "genericSig": "<τ_0_0 where τ_0_0 : file_selector_macos.PanelController>",
+          "sugared_genericSig": "<Self where Self : file_selector_macos.PanelController>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:19file_selector_macos15PanelControllerP",
+      "mangledName": "$s19file_selector_macos15PanelControllerP",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "ViewProvider",
+      "printedName": "ViewProvider",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "view",
+          "printedName": "view",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "AppKit.NSView?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSView",
+                  "printedName": "AppKit.NSView",
+                  "usr": "c:objc(cs)NSView"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos12ViewProviderP4viewSo6NSViewCSgvp",
+          "mangledName": "$s19file_selector_macos12ViewProviderP4viewSo6NSViewCSgvp",
+          "moduleName": "file_selector_macos",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "AppKit.NSView?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "NSView",
+                      "printedName": "AppKit.NSView",
+                      "usr": "c:objc(cs)NSView"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12ViewProviderP4viewSo6NSViewCSgvg",
+              "mangledName": "$s19file_selector_macos12ViewProviderP4viewSo6NSViewCSgvg",
+              "moduleName": "file_selector_macos",
+              "genericSig": "<τ_0_0 where τ_0_0 : file_selector_macos.ViewProvider>",
+              "sugared_genericSig": "<Self where Self : file_selector_macos.ViewProvider>",
+              "protocolReq": true,
+              "reqNewWitnessTableEntry": true,
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:19file_selector_macos12ViewProviderP",
+      "mangledName": "$s19file_selector_macos12ViewProviderP",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FileSelectorPlugin",
+      "printedName": "FileSelectorPlugin",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "viewProvider",
+          "printedName": "viewProvider",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "ViewProvider",
+              "printedName": "file_selector_macos.ViewProvider",
+              "usr": "s:19file_selector_macos12ViewProviderP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC12viewProvider33_DED4EE33D58DF5954824CAE0A7E4FF82LLAA04ViewH0_pvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC12viewProvider33_DED4EE33D58DF5954824CAE0A7E4FF82LLAA04ViewH0_pvp",
+          "moduleName": "file_selector_macos",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "panelController",
+          "printedName": "panelController",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "PanelController",
+              "printedName": "file_selector_macos.PanelController",
+              "usr": "s:19file_selector_macos15PanelControllerP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC15panelController33_DED4EE33D58DF5954824CAE0A7E4FF82LLAA05PanelH0_pvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC15panelController33_DED4EE33D58DF5954824CAE0A7E4FF82LLAA05PanelH0_pvp",
+          "moduleName": "file_selector_macos",
+          "isInternal": true,
+          "declAttributes": [
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "openMethod",
+          "printedName": "openMethod",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC10openMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC10openMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "moduleName": "file_selector_macos",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "openDirectoryMethod",
+          "printedName": "openDirectoryMethod",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC19openDirectoryMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC19openDirectoryMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "moduleName": "file_selector_macos",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 3,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "saveMethod",
+          "printedName": "saveMethod",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC10saveMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC10saveMethod33_DED4EE33D58DF5954824CAE0A7E4FF82LLSSvp",
+          "moduleName": "file_selector_macos",
+          "isInternal": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "fixedbinaryorder": 4,
+          "isLet": true,
+          "hasStorage": true
+        },
+        {
+          "kind": "Var",
+          "name": "forceLegacyTypes",
+          "printedName": "forceLegacyTypes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvp",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvp",
+          "moduleName": "file_selector_macos",
+          "isOpen": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 5,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvg",
+              "mangledName": "$s19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvs",
+              "mangledName": "$s19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvM",
+              "mangledName": "$s19file_selector_macos18FileSelectorPluginC16forceLegacyTypesSbvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "isOpen": true,
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "register",
+          "printedName": "register(with:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterPluginRegistrar",
+              "printedName": "FlutterMacOS.FlutterPluginRegistrar",
+              "usr": "c:objc(pl)FlutterPluginRegistrar"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorPlugin(cm)registerWithRegistrar:",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "objc_name": "registerWithRegistrar:",
+          "declAttributes": [
+            "Final",
+            "ObjC",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(viewProvider:panelController:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileSelectorPlugin",
+              "printedName": "file_selector_macos.FileSelectorPlugin",
+              "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorPlugin"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ViewProvider",
+              "printedName": "file_selector_macos.ViewProvider",
+              "usr": "s:19file_selector_macos12ViewProviderP"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "PanelController",
+              "printedName": "file_selector_macos.PanelController",
+              "usr": "s:19file_selector_macos15PanelControllerP"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC12viewProvider15panelControllerAcA04ViewH0_p_AA05PanelJ0_ptcfc",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC12viewProvider15panelControllerAcA04ViewH0_p_AA05PanelJ0_ptcfc",
+          "moduleName": "file_selector_macos",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "displayOpenPanel",
+          "printedName": "displayOpenPanel(options:completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "OpenPanelOptions",
+              "printedName": "file_selector_macos.OpenPanelOptions",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Swift.Result<[Swift.String?], Swift.Error>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Result",
+                  "printedName": "Swift.Result<[Swift.String?], Swift.Error>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[Swift.String?]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Swift.String?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "String",
+                              "printedName": "Swift.String",
+                              "usr": "s:SS"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Error",
+                      "printedName": "Swift.Error",
+                      "usr": "s:s5ErrorP"
+                    }
+                  ],
+                  "usr": "s:s6ResultO"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC16displayOpenPanel7options10completionyAA0hI7OptionsV_ys6ResultOySaySSSgGs5Error_pGctF",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC16displayOpenPanel7options10completionyAA0hI7OptionsV_ys6ResultOySaySSSgGs5Error_pGctF",
+          "moduleName": "file_selector_macos",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "displaySavePanel",
+          "printedName": "displaySavePanel(options:completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Swift.Result<Swift.String?, Swift.Error>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Result",
+                  "printedName": "Swift.Result<Swift.String?, Swift.Error>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Error",
+                      "printedName": "Swift.Error",
+                      "usr": "s:s5ErrorP"
+                    }
+                  ],
+                  "usr": "s:s6ResultO"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos18FileSelectorPluginC16displaySavePanel7options10completionyAA0hI7OptionsV_ys6ResultOySSSgs5Error_pGctF",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginC16displaySavePanel7options10completionyAA0hI7OptionsV_ys6ResultOySSSgs5Error_pGctF",
+          "moduleName": "file_selector_macos",
+          "isOpen": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileSelectorPlugin",
+              "printedName": "file_selector_macos.FileSelectorPlugin",
+              "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorPlugin"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorPlugin(im)init",
+          "mangledName": "$s19file_selector_macos18FileSelectorPluginCACycfc",
+          "moduleName": "file_selector_macos",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorPlugin",
+      "mangledName": "$s19file_selector_macos18FileSelectorPluginC",
+      "moduleName": "file_selector_macos",
+      "isOpen": true,
+      "declAttributes": [
+        "AccessControl",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSObject",
+      "hasMissingDesignatedInitializers": true,
+      "superclassNames": [
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "FileSelectorApi",
+          "printedName": "FileSelectorApi",
+          "usr": "s:19file_selector_macos15FileSelectorApiP",
+          "mangledName": "$s19file_selector_macos15FileSelectorApiP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "file_selector_macos"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "AllowedTypes",
+      "printedName": "AllowedTypes",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "extensions",
+          "printedName": "extensions",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvp",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvg",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvs",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvM",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV10extensionsSaySSSgGvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "mimeTypes",
+          "printedName": "mimeTypes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvp",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvg",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvs",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvM",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV04mimeE0SaySSSgGvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "utis",
+          "printedName": "utis",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos12AllowedTypesV4utisSaySSSgGvp",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV4utisSaySSSgGvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV4utisSaySSSgGvg",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV4utisSaySSSgGvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[Swift.String?]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV4utisSaySSSgGvs",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV4utisSaySSSgGvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos12AllowedTypesV4utisSaySSSgGvM",
+              "mangledName": "$s19file_selector_macos12AllowedTypesV4utisSaySSSgGvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "fromList",
+          "printedName": "fromList(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.AllowedTypes?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AllowedTypes",
+                  "printedName": "file_selector_macos.AllowedTypes",
+                  "usr": "s:19file_selector_macos12AllowedTypesV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos12AllowedTypesV8fromListyACSgSayypSgGFZ",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV8fromListyACSgSayypSgGFZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "toList",
+          "printedName": "toList()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos12AllowedTypesV6toListSayypSgGyF",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV6toListSayypSgGyF",
+          "moduleName": "file_selector_macos",
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(extensions:mimeTypes:utis:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "AllowedTypes",
+              "printedName": "file_selector_macos.AllowedTypes",
+              "usr": "s:19file_selector_macos12AllowedTypesV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Swift.String?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos12AllowedTypesV10extensions04mimeE04utisACSaySSSgG_A2Htcfc",
+          "mangledName": "$s19file_selector_macos12AllowedTypesV10extensions04mimeE04utisACSaySSSgG_A2Htcfc",
+          "moduleName": "file_selector_macos",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:19file_selector_macos12AllowedTypesV",
+      "mangledName": "$s19file_selector_macos12AllowedTypesV",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SavePanelOptions",
+      "printedName": "SavePanelOptions",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "allowedFileTypes",
+          "printedName": "allowedFileTypes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.AllowedTypes?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AllowedTypes",
+                  "printedName": "file_selector_macos.AllowedTypes",
+                  "usr": "s:19file_selector_macos12AllowedTypesV"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvp",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "file_selector_macos.AllowedTypes?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AllowedTypes",
+                      "printedName": "file_selector_macos.AllowedTypes",
+                      "usr": "s:19file_selector_macos12AllowedTypesV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvg",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "file_selector_macos.AllowedTypes?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AllowedTypes",
+                      "printedName": "file_selector_macos.AllowedTypes",
+                      "usr": "s:19file_selector_macos12AllowedTypesV"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvs",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvM",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV16allowedFileTypesAA07AllowedI0VSgvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "directoryPath",
+          "printedName": "directoryPath",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvp",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvg",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvs",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvM",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV13directoryPathSSSgvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "nameFieldStringValue",
+          "printedName": "nameFieldStringValue",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvp",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvg",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvs",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvM",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV20nameFieldStringValueSSSgvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "prompt",
+          "printedName": "prompt",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV6promptSSSgvp",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV6promptSSSgvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV6promptSSSgvg",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV6promptSSSgvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV6promptSSSgvs",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV6promptSSSgvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV6promptSSSgvM",
+              "mangledName": "$s19file_selector_macos16SavePanelOptionsV6promptSSSgvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "fromList",
+          "printedName": "fromList(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.SavePanelOptions?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SavePanelOptions",
+                  "printedName": "file_selector_macos.SavePanelOptions",
+                  "usr": "s:19file_selector_macos16SavePanelOptionsV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV8fromListyACSgSayypSgGFZ",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV8fromListyACSgSayypSgGFZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "toList",
+          "printedName": "toList()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV6toListSayypSgGyF",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV6toListSayypSgGyF",
+          "moduleName": "file_selector_macos",
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(allowedFileTypes:directoryPath:nameFieldStringValue:prompt:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.AllowedTypes?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "AllowedTypes",
+                  "printedName": "file_selector_macos.AllowedTypes",
+                  "usr": "s:19file_selector_macos12AllowedTypesV"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos16SavePanelOptionsV16allowedFileTypes13directoryPath20nameFieldStringValue6promptAcA07AllowedI0VSg_SSSgA2Ktcfc",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsV16allowedFileTypes13directoryPath20nameFieldStringValue6promptAcA07AllowedI0VSg_SSSgA2Ktcfc",
+          "moduleName": "file_selector_macos",
+          "implicit": true,
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos16SavePanelOptionsVACycfc",
+          "mangledName": "$s19file_selector_macos16SavePanelOptionsVACycfc",
+          "moduleName": "file_selector_macos",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:19file_selector_macos16SavePanelOptionsV",
+      "mangledName": "$s19file_selector_macos16SavePanelOptionsV",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "OpenPanelOptions",
+      "printedName": "OpenPanelOptions",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "allowsMultipleSelection",
+          "printedName": "allowsMultipleSelection",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvp",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvg",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvs",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvM",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelectionSbvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "canChooseDirectories",
+          "printedName": "canChooseDirectories",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvp",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvg",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvs",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvM",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV20canChooseDirectoriesSbvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "canChooseFiles",
+          "printedName": "canChooseFiles",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvp",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvg",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Bool",
+                  "printedName": "Swift.Bool",
+                  "usr": "s:Sb"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvs",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvM",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV14canChooseFilesSbvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "baseOptions",
+          "printedName": "baseOptions",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvp",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvp",
+          "moduleName": "file_selector_macos",
+          "declAttributes": [
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SavePanelOptions",
+                  "printedName": "file_selector_macos.SavePanelOptions",
+                  "usr": "s:19file_selector_macos16SavePanelOptionsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvg",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvg",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Set",
+              "printedName": "Set()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "SavePanelOptions",
+                  "printedName": "file_selector_macos.SavePanelOptions",
+                  "usr": "s:19file_selector_macos16SavePanelOptionsV"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvs",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0Vvs",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "set"
+            },
+            {
+              "kind": "Accessor",
+              "name": "Modify",
+              "printedName": "Modify()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0VvM",
+              "mangledName": "$s19file_selector_macos16OpenPanelOptionsV04baseF0AA04SaveeF0VvM",
+              "moduleName": "file_selector_macos",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "_modify"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "fromList",
+          "printedName": "fromList(_:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.OpenPanelOptions?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "OpenPanelOptions",
+                  "printedName": "file_selector_macos.OpenPanelOptions",
+                  "usr": "s:19file_selector_macos16OpenPanelOptionsV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV8fromListyACSgSayypSgGFZ",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV8fromListyACSgSayypSgGFZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "toList",
+          "printedName": "toList()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[Any?]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "usr": "s:Sa"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV6toListSayypSgGyF",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV6toListSayypSgGyF",
+          "moduleName": "file_selector_macos",
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(allowsMultipleSelection:canChooseDirectories:canChooseFiles:baseOptions:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "OpenPanelOptions",
+              "printedName": "file_selector_macos.OpenPanelOptions",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Bool",
+              "printedName": "Swift.Bool",
+              "usr": "s:Sb"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelection20canChooseDirectories0jK5Files04baseF0ACSb_S2bAA04SaveeF0Vtcfc",
+          "mangledName": "$s19file_selector_macos16OpenPanelOptionsV23allowsMultipleSelection20canChooseDirectories0jK5Files04baseF0ACSb_S2bAA04SaveeF0Vtcfc",
+          "moduleName": "file_selector_macos",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:19file_selector_macos16OpenPanelOptionsV",
+      "mangledName": "$s19file_selector_macos16OpenPanelOptionsV",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FileSelectorApiCodec",
+      "printedName": "FileSelectorApiCodec",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "shared",
+          "printedName": "shared",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileSelectorApiCodec",
+              "printedName": "file_selector_macos.FileSelectorApiCodec",
+              "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorApiCodec"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos20FileSelectorApiCodecC6sharedACvpZ",
+          "mangledName": "$s19file_selector_macos20FileSelectorApiCodecC6sharedACvpZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "FileSelectorApiCodec",
+                  "printedName": "file_selector_macos.FileSelectorApiCodec",
+                  "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorApiCodec"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos20FileSelectorApiCodecC6sharedACvgZ",
+              "mangledName": "$s19file_selector_macos20FileSelectorApiCodecC6sharedACvgZ",
+              "moduleName": "file_selector_macos",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileSelectorApiCodec",
+              "printedName": "file_selector_macos.FileSelectorApiCodec",
+              "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorApiCodec"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorApiCodec(im)init",
+          "mangledName": "$s19file_selector_macos20FileSelectorApiCodecCACycfc",
+          "moduleName": "file_selector_macos",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@file_selector_macos@objc(cs)FileSelectorApiCodec",
+      "mangledName": "$s19file_selector_macos20FileSelectorApiCodecC",
+      "moduleName": "file_selector_macos",
+      "isOpen": true,
+      "declAttributes": [
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)FlutterStandardMessageCodec",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "FlutterMacOS.FlutterStandardMessageCodec",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FileSelectorApi",
+      "printedName": "FileSelectorApi",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "displayOpenPanel",
+          "printedName": "displayOpenPanel(options:completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "OpenPanelOptions",
+              "printedName": "file_selector_macos.OpenPanelOptions",
+              "usr": "s:19file_selector_macos16OpenPanelOptionsV"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Swift.Result<[Swift.String?], Swift.Error>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Result",
+                  "printedName": "Swift.Result<[Swift.String?], Swift.Error>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[Swift.String?]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Swift.String?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "String",
+                              "printedName": "Swift.String",
+                              "usr": "s:SS"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Error",
+                      "printedName": "Swift.Error",
+                      "usr": "s:s5ErrorP"
+                    }
+                  ],
+                  "usr": "s:s6ResultO"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos15FileSelectorApiP16displayOpenPanel7options10completionyAA0hI7OptionsV_ys6ResultOySaySSSgGs5Error_pGctF",
+          "mangledName": "$s19file_selector_macos15FileSelectorApiP16displayOpenPanel7options10completionyAA0hI7OptionsV_ys6ResultOySaySSSgGs5Error_pGctF",
+          "moduleName": "file_selector_macos",
+          "genericSig": "<τ_0_0 where τ_0_0 : file_selector_macos.FileSelectorApi>",
+          "sugared_genericSig": "<Self where Self : file_selector_macos.FileSelectorApi>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "displaySavePanel",
+          "printedName": "displaySavePanel(options:completion:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "SavePanelOptions",
+              "printedName": "file_selector_macos.SavePanelOptions",
+              "usr": "s:19file_selector_macos16SavePanelOptionsV"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Swift.Result<Swift.String?, Swift.Error>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Result",
+                  "printedName": "Swift.Result<Swift.String?, Swift.Error>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.String?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "String",
+                          "printedName": "Swift.String",
+                          "usr": "s:SS"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Error",
+                      "printedName": "Swift.Error",
+                      "usr": "s:s5ErrorP"
+                    }
+                  ],
+                  "usr": "s:s6ResultO"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos15FileSelectorApiP16displaySavePanel7options10completionyAA0hI7OptionsV_ys6ResultOySSSgs5Error_pGctF",
+          "mangledName": "$s19file_selector_macos15FileSelectorApiP16displaySavePanel7options10completionyAA0hI7OptionsV_ys6ResultOySSSgs5Error_pGctF",
+          "moduleName": "file_selector_macos",
+          "genericSig": "<τ_0_0 where τ_0_0 : file_selector_macos.FileSelectorApi>",
+          "sugared_genericSig": "<Self where Self : file_selector_macos.FileSelectorApi>",
+          "protocolReq": true,
+          "declAttributes": [
+            "RawDocComment"
+          ],
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:19file_selector_macos15FileSelectorApiP",
+      "mangledName": "$s19file_selector_macos15FileSelectorApiP",
+      "moduleName": "file_selector_macos",
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FileSelectorApiSetup",
+      "printedName": "FileSelectorApiSetup",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "codec",
+          "printedName": "codec",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterStandardMessageCodec",
+              "printedName": "FlutterMacOS.FlutterStandardMessageCodec",
+              "usr": "c:objc(cs)FlutterStandardMessageCodec"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:19file_selector_macos20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
+          "mangledName": "$s19file_selector_macos20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "FlutterStandardMessageCodec",
+                  "printedName": "FlutterMacOS.FlutterStandardMessageCodec",
+                  "usr": "c:objc(cs)FlutterStandardMessageCodec"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:19file_selector_macos20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
+              "mangledName": "$s19file_selector_macos20FileSelectorApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
+              "moduleName": "file_selector_macos",
+              "static": true,
+              "declAttributes": [
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "setUp",
+          "printedName": "setUp(binaryMessenger:api:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterBinaryMessenger",
+              "printedName": "FlutterMacOS.FlutterBinaryMessenger",
+              "usr": "c:objc(pl)FlutterBinaryMessenger"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "file_selector_macos.FileSelectorApi?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "FileSelectorApi",
+                  "printedName": "file_selector_macos.FileSelectorApi",
+                  "usr": "s:19file_selector_macos15FileSelectorApiP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:19file_selector_macos20FileSelectorApiSetupC5setUp15binaryMessenger3apiySo013FlutterBinaryK0_p_AA0deF0_pSgtFZ",
+          "mangledName": "$s19file_selector_macos20FileSelectorApiSetupC5setUp15binaryMessenger3apiySo013FlutterBinaryK0_p_AA0deF0_pSgtFZ",
+          "moduleName": "file_selector_macos",
+          "static": true,
+          "declAttributes": [
+            "Final",
+            "RawDocComment"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FileSelectorApiSetup",
+              "printedName": "file_selector_macos.FileSelectorApiSetup",
+              "usr": "s:19file_selector_macos20FileSelectorApiSetupC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:19file_selector_macos20FileSelectorApiSetupCACycfc",
+          "mangledName": "$s19file_selector_macos20FileSelectorApiSetupCACycfc",
+          "moduleName": "file_selector_macos",
+          "implicit": true,
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:19file_selector_macos20FileSelectorApiSetupC",
+      "mangledName": "$s19file_selector_macos20FileSelectorApiSetupC",
+      "moduleName": "file_selector_macos",
+      "isOpen": true,
+      "declAttributes": [
+        "RawDocComment"
+      ]
+    }
+  ],
+  "json_format_version": 6
+}
