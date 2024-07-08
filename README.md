@@ -1,6 +1,6 @@
-# qr_generator
+# Women Techmakers HCMC Internal Tool
 
-A new Flutter project.
+This tool is used for WTM HCMC team's operations
 
 ## Getting Started
 

@@ -5,12 +5,8 @@ import 'dart:ui';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:qr_generator/pages/img/image_converter_page.dart';
-import 'package:qr_generator/pages/qr/gradient-tab.dart';
-import 'package:qr_generator/pages/qr/linear-tab.dart';
 import 'package:qr_generator/pages/qr/mode.dart';
 import 'package:qr_generator/pages/qr/qr_main_page.dart';
 import 'package:qr_generator/pages/shorten_url/shorten_url_page.dart';
@@ -71,14 +67,17 @@ class _MyHomePageState extends State<MyHomePage> {
     //   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
     // ),
    const QrMainPage(),
-   const ShortenUrlPage(),
+
+    ShortenUrlPage(),
   ];
+
+  String currentTitle = "QR Generator";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(currentTitle),
       ),
       drawer: Drawer(
         child: ListView(
@@ -89,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
-              child: Center(child: Text('Happy doing deadlines!\nHope this tool help!', style: TextStyle(color: Colors.white),)),
+              child: Center(child: Text('Happy doing deadlines!\nHope this tool helps!', style: TextStyle(color: Colors.white),)),
             ),
             // ListTile(
             //   title: const Text('Home'),
@@ -106,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
               selected: _selectedIndex == 0,
               onTap: () {
                 // Update the state of the app
-                _onItemTapped(0);
+                _onItemTapped(0, "QR Generator");
                 // Then close the drawer
                 Navigator.pop(context);
               },
@@ -116,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
               selected: _selectedIndex == 1,
               onTap: () {
                 // Update the state of the app
-                _onItemTapped(1);
+                _onItemTapped(1, "Shorten Url (via tinyUrl)");
                 // Then close the drawer
                 Navigator.pop(context);
               },
@@ -128,9 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _onItemTapped(int index) {
+  void _onItemTapped(int index, String title) {
     setState(() {
       _selectedIndex = index;
+      currentTitle = title;
     });
   }
 

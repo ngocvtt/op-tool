@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
-options: "30773877af673ad64ab80f2e2d11ee9a24eeee8f268b0aacf6b33343a52cc033"
-build_start_time: [1690550981, 305110931]
-build_end_time: [1690550981, 918231010]
-inputs:
-  "/Users/lap15351-local/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+1/macos/Classes/FileSelectorPlugin.swift": [1690550767, 675919294]
-  "/Users/lap15351-local/.pub-cache/hosted/pub.dev/file_selector_macos-0.9.3+1/macos/Classes/messages.g.swift": [1690550767, 676401615]

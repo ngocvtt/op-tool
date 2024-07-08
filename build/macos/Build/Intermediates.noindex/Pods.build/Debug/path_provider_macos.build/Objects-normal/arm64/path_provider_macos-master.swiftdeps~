@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
-options: "30773877af673ad64ab80f2e2d11ee9a24eeee8f268b0aacf6b33343a52cc033"
-build_start_time: [1690549363, 945286035]
-build_end_time: [1690549367, 539700984]
-inputs:
-  "/Users/lap15351-local/.pub-cache/hosted/pub.dev/path_provider_macos-2.0.7/macos/Classes/PathProviderPlugin.swift": [1689250808, 906826257]
-  "/Users/lap15351-local/.pub-cache/hosted/pub.dev/path_provider_macos-2.0.7/macos/Classes/messages.g.swift": [1689250808, 906415224]
